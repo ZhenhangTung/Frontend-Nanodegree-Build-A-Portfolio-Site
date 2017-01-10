@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	margin-top: 40px;
+	width: 90%;
+}
+
+header {
+	height: 140px;
+	border-bottom-color: #2d3c49;
+	border-bottom-style:solid;
+}
+
+#logo img {
+	width: 100px;
+	height: 100px;
+}
+#logo {
+	float: left;
+}
+
+.name-and-title {
+	float: right;
+}
