@@ -1,24 +1,72 @@
 <html>
 <head>
 	<title>Portfolio Site</title>
-	<link href="css/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 760px)" href="css/small-viewport.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)" href="css/medium-viewport.css">
 </head>
 <body>
-	<header>
+	<header class="container portfolio-header">
 		<div id="logo">
 			<img src="img/udacity.svg" alt="Udacity Logo">
 		</div>
-		<div class="name-and-title">
-			<h1>Jane Doette</h1>
-			<h3>Front-end Ninja</h3>
+		<div class="name-and-title text-uppercase">
+			<h1 class="name">Jane Doette</h1>
+			<h4 class="title">Front-end Ninja</h4>
 		</div>
 	</header>
-
-	<section>
-
+	<article class="main-content container">
+		<picture>
+			<source srcset="img/medium-cropped-grey-cat.jpg" media="screen and (max-width: 650px)" class="img-responsive">
+			<img src="img/grey-cat.jpg" alt="main-content" class="img-responsive">
+		</picture>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+	<section class="works-display container">
+		<h2 class="work-title">Featured Work</h2>
+		<div class="works row">
+			<div class="work col-md-4 work-applify">
+				<img src="img/Benedict-Cumberbatch.jpg" height="195" width="299" alt="Work Applify">
+				<h3>Applify</h3>
+				<div>https://github.com/udacity/Applify</div>
+			</div>
+			<div class="work col-md-4 work-sunflower">
+				<img src="img/Cat_Laying_On_Carpet.jpg" height="195" width="299" alt="Work Sunflower">
+				<h3>Sunflower</h3>
+				<div>https://github.com/udacity/Sunflower</div>
+			</div>
+			<div class="work col-md-4 work-broken">
+				<img src="img/Puppy-In-Wagon.jpg" height="195" width="299" alt="Work Broken">
+				<h3>Broken</h3>
+				<div>https://github.com/udacity/Broken</div>
+			</div>
+		</div>
 	</section>
-	<footer>
-
-	</footer>
+	<hr>
+	<div class="image-credit">
+		Image Credit:
+		<ul>
+			<li>
+				Grey Cat: Photo by <a href="http://www.animalendocrine.com/about-the-clinic/about-the-clinic/">animalendocrine.com</a>
+			</li>
+			<li>
+				Cat Laying On Carpet: Photo by <a href="http://www.40cg.com/cat-health-problems-cat-health-care-kitten-information.html">40cg.com</a>
+			</li>
+			<li>
+				Puppy In Wagon: Photo by <a href="http://www.petwave.com/Dogs/Behavior/Puppy-Training.aspx">petwave.com</a>
+			</li>
+			<li>
+				Benedict Cumberbatch: Photo by <a href="http://indulgy.com/post/9ckm1kuq93/i-look-at-photographs-the-ones-that-people-ask-m">indulgy.com</a>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>

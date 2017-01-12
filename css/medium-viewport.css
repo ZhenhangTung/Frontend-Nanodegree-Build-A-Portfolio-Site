@@ -1,0 +1,15 @@
+.work-title, .works {
+	text-align: center;
+}
+
+.works {
+	margin: 0px auto;
+}
+
+.work {
+	margin: 5px auto;
+}
+
+.portfolio-header, .main-content {
+	padding: 10px;
+}
